@@ -17,4 +17,4 @@ function displayRandomQuote() {
 displayRandomQuote();
 
 // Rotate quotes every 10 seconds
-setInterval(displayRandomQuote, 10000);
+setInterval(displayRandomQuote, 6000);
