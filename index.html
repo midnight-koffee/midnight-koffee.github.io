@@ -1,135 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyanshu Kumar</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #262626;
-            color: #f39c12;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #f39c12;
-        }
-        nav {
-            background-color: #333333;
-            color: #f39c12;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #f39c12;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            color: #ffffff;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #262626;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        section {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        h1, h2 {
-            color: #f39c12;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #262626;
-            color: #f39c12;
-            padding: 10px;
-            text-align: center;
-            border-top: 2px solid #f39c12;
-        }
-        a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .quote {
-            font-style: italic;
-            font-size: 1.2em;
-            margin-top: 20px;
-            text-align: center;
-            color: #b3b3b3;
-            border: 1px solid #f39c12;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #333333;
-        }
-        .interactive:hover {
-            background-color: #383838;
-            transition: background-color 0.3s ease;
-        }
-        .chessboard {
-            margin-top: 20px;
-            width: 300px;
-            height: 300px;
-            background-color: #333333;
-            border: 2px solid #f39c12;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Mathematician</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Divyanshu Kumar</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="notes.html">Notes</a>
-        <a href="cv.pdf" target="_blank">CV</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I have finished my BS-MS in Mathematics from IISER-K and qualified CSIR-NET in 2023.
-                I will be joining <a href="https://www.ashoka.edu.in/" target="_blank">Ashoka University</a> as a teaching fellow.
-            </p>
-        </section>
-        <section id="chess-puzzle">
-            <h2>Chess Puzzle</h2>
-            <div class="chessboard" id="board1"></div>
-            <script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
-            <script>
-                var board1 = Chessboard('board1', 'start');
-            </script>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Divyanshu Kumar.</p>
-    </footer>
+  <header>
+    <h1>Your Name</h1>
+    <h2>Mathematician</h2>
+  </header>
+  <main>
+    <section id="quote">
+      <p id="quote-text"></p>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I recently completed my BS-MS in Mathematics from the prestigious Indian Institute of Science Education and Research, Kolkata (IISER-K). In 2023, I qualified for the prestigious CSIR-NET exam, showcasing my strong foundation in the subject.</p>
+      <p>Thrilled to announce that I will be joining Ashoka University as a Teaching Fellow in the Mathematics Department! I am excited to share my passion for math and help students embark on their mathematical journeys.</p>
+    </section>
+    <section id="links">
+      <h2>Explore My Work</h2>
+      <ul>
+        <li><a href="CV.pdf">Download CV</a></li>
+        <li><a href="Mathematical_Diary.pdf">Mathematical Diary (Notes)</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
