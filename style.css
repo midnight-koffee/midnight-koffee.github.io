@@ -85,15 +85,15 @@ section {
 }
 
 #trivia-border {
-  border: 2px solid #ff9800; /* Orange border for trivia */
-  padding: 20px; /* Increased padding for the trivia box */
+  border: 2px solid #1976d2; /* Different blue border for trivia */
+  padding: 15px;
   border-radius: 10px;
   margin-top: 20px;
 }
 
 #trivia-text {
   font-style: italic;
-  color: #ff9800; /* Orange text color for trivia */
+  color: #90caf9; /* Light blue text color for trivia */
 }
 
 /* Hover effect for header */
