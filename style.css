@@ -53,18 +53,6 @@ section {
   font-weight: bold;
 }
 
-#chess-widget {
-  text-align: center;
-}
-
-#chess-widget iframe {
-  width: 100%;
-  height: 560px;
-  border: 2px solid #0d47a1; /* Dark blue border */
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-}
-
 #quote {
   text-align: center;
 }
@@ -79,3 +67,8 @@ section {
 #quote-text {
   font-style: italic;
 }
+
+#daily-puzzle {
+  text-align: center;
+}
+
