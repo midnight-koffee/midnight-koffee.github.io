@@ -25,10 +25,6 @@ h2 {
   font-size: 1.5rem; /* Medium font size for h2 */
 }
 
-.header-subtitle {
-  font-size: 1rem; /* Smaller font size for subtitle */
-}
-
 main {
   padding: 20px;
 }
@@ -54,10 +50,6 @@ section {
   text-decoration: none;
   color: #90caf9; /* Light blue link color */
   font-weight: bold;
-}
-
-#chess-puzzle {
-  text-align: center;
 }
 
 #quote {
