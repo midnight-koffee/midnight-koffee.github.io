@@ -1,3 +1,4 @@
+/* style.css */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -59,6 +60,22 @@ section {
 
 #quote-text {
   font-style: italic;
+  font-size: 1.2rem; /* Adjust quote text size */
+}
+
+#trivia {
+  background-color: #212121; /* Dark gray background for trivia */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#trivia h2 {
+  color: #90caf9; /* Light blue for trivia section heading */
+}
+
+#trivia p {
+  margin-bottom: 10px;
 }
 
 #daily-puzzle {
