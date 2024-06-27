@@ -5,36 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Divyanshu Kumar</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Style adjustments specific to fractal animation */
-    #fractal-canvas {
-      display: block;
-      margin: 0 auto;
-      background-color: #000; /* Black canvas background */
-    }
-
-    /* Style for trivia section */
-    #trivia {
-      background-color: #212121; /* Dark gray background */
-      color: #ddd; /* Light text color */
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-
-    #trivia h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #90caf9; /* Light blue border bottom */
-      padding-bottom: 5px;
-    }
-
-    #trivia p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-  </style>
+  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
 </head>
 <body>
   <header>
@@ -51,7 +22,6 @@
       <ul>
         <li><a href="CV.pdf">Download CV</a></li>
         <li><a href="Mathematical_Diary.pdf">Notes</a></li>
-        <li><a href="fractal_animation.html">Fractal Animation</a></li> <!-- Link to your fractal animation -->
       </ul>
     </section>
     <section id="quote">
@@ -59,20 +29,18 @@
         <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
       </div>
     </section>
-    <section id="fractal">
-      <h2>Fractal Animation</h2>
-      <canvas id="fractal-canvas" width="600" height="600"></canvas>
-      <p>Click canvas to start animation.</p>
-    </section>
-    <section id="trivia">
-      <h2>Mandelbrot Set Trivia</h2>
-      <p>The Mandelbrot set is named after Benoît B. Mandelbrot, a mathematician known for his work in fractal geometry.</p>
-      <p>It is a set of complex numbers that, when iterated through a simple algorithm, produce fractal images with intricate patterns that repeat infinitely.</p>
-      <p>The Mandelbrot set is closely related to complex dynamics and chaos theory, revealing deep connections between algebra, geometry, and topology.</p>
+    <section id="daily-puzzle">
+      <h2>Daily Chess Puzzle</h2>
+      <div id="puzzle">
+        <div id="puzzle-container"></div>
+        <a id="ct-link" href="https://chesstempo.com/play-chess-online/">Play Chess Online</a>
+      </div>
     </section>
   </main>
-  <script src="fractal_animation.js"></script> <!-- JavaScript file for fractal animation -->
+  <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
+  <script>
+    new Puzzle({ pieceSize: 55});
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
-
