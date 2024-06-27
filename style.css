@@ -8,7 +8,7 @@ body {
 
 header {
   background-color: #0d47a1; /* Dark blue header */
-  color: #fff;
+  color: #e3f2fd; /* Subtle blue color for the header text */
   padding: 20px;
   text-align: center;
 }
