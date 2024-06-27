@@ -6,10 +6,9 @@
     <title>Divyanshu Kumar</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #0a0a0a;
+            background-color: #121212;
             color: #e0e0e0;
             margin: 0;
             padding: 0;
@@ -18,24 +17,23 @@
             min-height: 100vh;
         }
         header {
-            background-color: #141414;
-            color: #00ff00;
+            background-color: #1e1e1e;
+            color: #f39c12;
             padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #00ff00;
+            border-bottom: 2px solid #f39c12;
         }
         nav {
-            background-color: #1a1a1a;
-            color: #00ff00;
+            background-color: #282828;
+            color: #f39c12;
             padding: 10px;
             text-align: center;
         }
         nav a {
-            color: #00ff00;
+            color: #f39c12;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.1em;
-            font-family: 'Fira Code', monospace;
         }
         nav a:hover {
             color: #ffffff;
@@ -44,8 +42,8 @@
             padding: 20px;
             max-width: 900px;
             margin: 0 auto;
-            background-color: #141414;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
             flex: 1;
         }
@@ -53,22 +51,21 @@
             margin-bottom: 20px;
         }
         h1, h2 {
-            color: #00ff00;
-            font-family: 'Fira Code', monospace;
+            color: #f39c12;
         }
         p {
             font-size: 1.2em;
             line-height: 1.6;
         }
         footer {
-            background-color: #141414;
-            color: #00ff00;
+            background-color: #1e1e1e;
+            color: #f39c12;
             padding: 10px;
             text-align: center;
-            border-top: 2px solid #00ff00;
+            border-top: 2px solid #f39c12;
         }
         a {
-            color: #00ff00;
+            color: #f39c12;
             text-decoration: none;
         }
         a:hover {
@@ -77,40 +74,16 @@
         .quote {
             font-style: italic;
             font-size: 1.2em;
-            margin-bottom: 20px;
             text-align: center;
             color: #b3b3b3;
-            border: 2px solid #00ff00;
-            padding: 15px;
+            border: 1px solid #f39c12;
+            padding: 10px;
             border-radius: 5px;
-            background-color: #1a1a1a;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
-        }
-        .math-game {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .math-game input {
-            padding: 5px;
-            font-size: 1em;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            border: 1px solid #00ff00;
-            border-radius: 5px;
-        }
-        .math-game button {
-            padding: 5px 10px;
-            background-color: #00ff00;
-            color: #0a0a0a;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .math-game button:hover {
-            background-color: #ffffff;
+            background-color: #2c2c2c;
+            margin-bottom: 20px;
         }
         .interactive:hover {
-            background-color: #202020;
+            background-color: #383838;
             transition: background-color 0.3s ease;
         }
     </style>
@@ -121,7 +94,7 @@
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="notes.html">Notes</a>
+        <a href="notes.html">Notes and Problems</a>
         <a href="cv.pdf" target="_blank">CV</a>
     </nav>
     <main>
@@ -137,22 +110,14 @@
             <h2>Explore</h2>
             <ul>
                 <li><a href="cv.pdf" target="_blank">My CV</a></li>
-                <li><a href="notes.html">Notes</a></li>
+                <li><a href="notes.html">Collection of Notes and Problems</a></li>
             </ul>
         </section>
-        <div class="math-game">
-            <h2>Math Puzzle</h2>
-            <p id="puzzle-question">Puzzle question will appear here.</p>
-            <input type="text" id="answer" placeholder="Your answer">
-            <button onclick="checkAnswer()">Submit</button>
-            <div id="result"></div>
-        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Divyanshu Kumar</p>
+        <p>&copy; 2024 Divyanshu Kumar.</p>
     </footer>
     <script>
-        // ... (Keep the existing JavaScript code)
         const quotes = [
             '"Mathematics is the music of reason." - James Joseph Sylvester',
             '"Pure mathematics is, in its way, the poetry of logical ideas." - Albert Einstein',
@@ -173,35 +138,6 @@
         }
 
         setInterval(changeQuote, 5000);
-
-        const puzzles = [
-            { question: "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?", answer: "echo" },
-            { question: "You measure my life in hours and I serve you by expiring. I'm quick when I'm thin and slow when I'm fat. The wind is my enemy.", answer: "candle" },
-            { question: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", answer: "map" },
-            { question: "What is seen in the middle of March and April that can’t be seen at the beginning or end of either month?", answer: "r" },
-            { question: "You see a boat filled with people. It has not sunk, but when you look again you don’t see a single person on the boat. Why?", answer: "all married" }
-        ];
-
-        function generatePuzzle() {
-            const randomIndex = Math.floor(Math.random() * puzzles.length);
-            document.getElementById('puzzle-question').textContent = puzzles[randomIndex].question;
-            return randomIndex;
-        }
-
-        let currentPuzzleIndex = generatePuzzle();
-
-        function checkAnswer() {
-            const userAnswer = document.getElementById('answer').value.toLowerCase();
-            const resultElement = document.getElementById('result');
-            if (userAnswer === puzzles[currentPuzzleIndex].answer) {
-                resultElement.textContent = "Correct!";
-                resultElement.style.color = "green";
-            } else {
-                resultElement.textContent = "Incorrect. Try again.";
-                resultElement.style.color = "red";
-            }
-            currentPuzzleIndex = generatePuzzle();
-            document.getElementById('answer').value = '';
     </script>
 </body>
 </html>
