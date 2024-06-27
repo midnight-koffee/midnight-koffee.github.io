@@ -59,7 +59,7 @@ section {
 
 #quote-border {
   border: 2px solid #0d47a1; /* Dark blue border around the quote */
-  padding: 20px; /* Increased padding for larger quote box */
+  padding: 20px; /* Increased padding for more space around the quote */
   border-radius: 5px;
   margin-top: 20px;
 }
