@@ -7,67 +7,79 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #121212;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #e0e0e0;
         }
         header {
-            background-color: #2e2e2e;
-            color: #fff;
+            background-color: #1e1e1e;
+            color: #f0a500;
             padding: 20px;
             text-align: center;
+            border-bottom: 2px solid #f0a500;
         }
         nav {
-            background-color: #4c4c4c;
-            color: #fff;
+            background-color: #333333;
+            color: #f0a500;
             padding: 10px;
             text-align: center;
         }
         nav a {
-            color: #fff;
+            color: #f0a500;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #ffffff;
         }
         main {
             padding: 20px;
             max-width: 900px;
             margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
         }
         section {
             margin-bottom: 20px;
         }
         h1, h2 {
-            color: #333;
+            color: #f0a500;
         }
         p {
             font-size: 1.2em;
             line-height: 1.6;
         }
         footer {
-            background-color: #2e2e2e;
-            color: #fff;
+            background-color: #1e1e1e;
+            color: #f0a500;
             padding: 10px;
             text-align: center;
+            border-top: 2px solid #f0a500;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
         a {
-            color: #007bff;
+            color: #f0a500;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Divyanshu's Personal Website</h1>
+        <h1>Divyanshu Kumar's Personal Website</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -79,20 +91,38 @@
             <h2>About Me</h2>
             <p>
                 I have finished my BS-MS in Mathematics from IISER-K and qualified CSIR-NET in 2023.
-                I will be joining <a href="https://www.ashoka.edu.in/" target="_blank">Ashoka University</a> as a teaching fellow for mathematics department for the session 2024-25 .
+                I will be joining <a href="https://www.ashoka.edu.in/" target="_blank">Ashoka University</a> as a teaching fellow in mathematics department for the session 2024-25.
             </p>
         </section>
         <section id="links">
             <h2>Explore</h2>
             <ul>
-                <li><a href="CV.pdf" target="_blank">My CV</a></li>
+                <li><a href="cv.pdf" target="_blank">My CV</a></li>
                 <li><a href="notes.html">Collection of Notes and Problems</a></li>
             </ul>
         </section>
+        <div class="quote" id="quote">"Mathematics is the music of reason." - James Joseph Sylvester</div>
+        <button onclick="changeQuote()">Change Quote</button>
     </main>
     <footer>
-        <p>&copy; 2024 Divyanshu. All rights reserved.</p>
+        <p>&copy; 2024 Divyanshu Kumar.</p>
     </footer>
+    <script>
+        const quotes = [
+            '"Mathematics is the music of reason." - James Joseph Sylvester',
+            '"Pure mathematics is, in its way, the poetry of logical ideas." - Albert Einstein',
+            '"Without mathematics, there’s nothing you can do. Everything around you is mathematics. Everything around you is numbers." - Shakuntala Devi',
+            '"Mathematics is the queen of the sciences." - Carl Friedrich Gauss',
+            '"The essence of mathematics lies in its freedom." - Georg Cantor'
+        ];
+
+        function changeQuote() {
+            const quoteElement = document.getElementById('quote');
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            quoteElement.textContent = quotes[randomIndex];
+        }
+    </script>
 </body>
 </html>
+
 
