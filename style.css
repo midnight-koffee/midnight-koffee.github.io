@@ -16,7 +16,7 @@ header {
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 2rem; /* Larger font size for h2 */
+  font-size: 1.5rem; /* Medium font size for h2 */
 }
 
 main {
@@ -51,9 +51,9 @@ section {
 }
 
 #quote-border {
-  border: 3px solid #0d47a1; /* Dark blue border around the quote */
-  padding: 20px; /* Increased padding for the quote box */
-  border-radius: 10px;
+  border: 2px solid #0d47a1; /* Dark blue border around the quote */
+  padding: 15px; /* Increased padding */
+  border-radius: 10px; /* Increased border radius */
   margin-top: 20px;
 }
 
@@ -61,27 +61,39 @@ section {
   font-style: italic;
 }
 
-#daily-puzzle {
-  text-align: center;
-}
-
-#puzzle {
-  background-color: #212121; /* Dark gray background for puzzle */
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-#ct-link {
-  display: block;
-  margin-top: 10px;
-  color: #90caf9; /* Light blue link color */
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /* Hover effect for header */
 header:hover {
   background-color: #002171;
   transition: background-color 0.3s ease;
+}
+
+/* Style adjustments specific to fractal animation */
+#fractal-canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #000; /* Black canvas background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Shadow effect */
+}
+
+/* Style for trivia section */
+#trivia {
+  background-color: #212121; /* Dark gray background */
+  color: #ddd; /* Light text color */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#trivia h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #90caf9; /* Light blue border bottom */
+  padding-bottom: 5px;
+}
+
+#trivia p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
