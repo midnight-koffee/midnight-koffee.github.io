@@ -124,9 +124,8 @@
         </section>
         <div class="quote" id="quote">"Mathematics is the music of reason." - James Joseph Sylvester</div>
         <div class="math-game">
-            <h2>Math Game</h2>
-            <p>Solve this equation:</p>
-            <div id="math-question"></div>
+            <h2>Math Puzzle</h2>
+            <p id="puzzle-question">Puzzle question will appear here.</p>
             <input type="text" id="answer" placeholder="Your answer">
             <button onclick="checkAnswer()">Submit</button>
             <div id="result"></div>
@@ -157,33 +156,33 @@
 
         setInterval(changeQuote, 5000);
 
-        const mathQuestions = [
-            { question: "5 + 3 =", answer: "8" },
-            { question: "12 - 4 =", answer: "8" },
-            { question: "9 * 2 =", answer: "18" },
-            { question: "16 / 4 =", answer: "4" },
-            { question: "7 + 6 =", answer: "13" }
+        const puzzles = [
+            { question: "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?", answer: "echo" },
+            { question: "You measure my life in hours and I serve you by expiring. I'm quick when I'm thin and slow when I'm fat. The wind is my enemy.", answer: "candle" },
+            { question: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", answer: "map" },
+            { question: "What is seen in the middle of March and April that can’t be seen at the beginning or end of either month?", answer: "r" },
+            { question: "You see a boat filled with people. It has not sunk, but when you look again you don’t see a single person on the boat. Why?", answer: "all married" }
         ];
 
-        function generateMathQuestion() {
-            const randomIndex = Math.floor(Math.random() * mathQuestions.length);
-            document.getElementById('math-question').textContent = mathQuestions[randomIndex].question;
+        function generatePuzzle() {
+            const randomIndex = Math.floor(Math.random() * puzzles.length);
+            document.getElementById('puzzle-question').textContent = puzzles[randomIndex].question;
             return randomIndex;
         }
 
-        let currentQuestionIndex = generateMathQuestion();
+        let currentPuzzleIndex = generatePuzzle();
 
         function checkAnswer() {
-            const userAnswer = document.getElementById('answer').value;
+            const userAnswer = document.getElementById('answer').value.toLowerCase();
             const resultElement = document.getElementById('result');
-            if (userAnswer === mathQuestions[currentQuestionIndex].answer) {
+            if (userAnswer === puzzles[currentPuzzleIndex].answer) {
                 resultElement.textContent = "Correct!";
                 resultElement.style.color = "green";
             } else {
                 resultElement.textContent = "Incorrect. Try again.";
                 resultElement.style.color = "red";
             }
-            currentQuestionIndex = generateMathQuestion();
+            currentPuzzleIndex = generatePuzzle();
             document.getElementById('answer').value = '';
         }
     </script>
