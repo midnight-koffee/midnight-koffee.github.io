@@ -12,6 +12,9 @@
             color: #d4d4d4;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #1b1b1b;
@@ -42,6 +45,7 @@
             background-color: #1b1b1b;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
+            flex: 1;
         }
         section {
             margin-bottom: 20px;
@@ -59,9 +63,6 @@
             padding: 10px;
             text-align: center;
             border-top: 2px solid #f0a500;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         a {
             color: #f0a500;
@@ -76,6 +77,24 @@
             margin-top: 20px;
             text-align: center;
             color: #b3b3b3;
+        }
+        .math-game {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .math-game input {
+            padding: 5px;
+            font-size: 1em;
+        }
+        .math-game button {
+            padding: 5px 10px;
+            background-color: #f0a500;
+            color: #1b1b1b;
+            border: none;
+            cursor: pointer;
+        }
+        .math-game button:hover {
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -104,6 +123,14 @@
             </ul>
         </section>
         <div class="quote" id="quote">"Mathematics is the music of reason." - James Joseph Sylvester</div>
+        <div class="math-game">
+            <h2>Math Game</h2>
+            <p>Solve this equation:</p>
+            <div id="math-question"></div>
+            <input type="text" id="answer" placeholder="Your answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <div id="result"></div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Divyanshu Kumar.</p>
@@ -129,6 +156,36 @@
         }
 
         setInterval(changeQuote, 5000);
+
+        const mathQuestions = [
+            { question: "5 + 3 =", answer: "8" },
+            { question: "12 - 4 =", answer: "8" },
+            { question: "9 * 2 =", answer: "18" },
+            { question: "16 / 4 =", answer: "4" },
+            { question: "7 + 6 =", answer: "13" }
+        ];
+
+        function generateMathQuestion() {
+            const randomIndex = Math.floor(Math.random() * mathQuestions.length);
+            document.getElementById('math-question').textContent = mathQuestions[randomIndex].question;
+            return randomIndex;
+        }
+
+        let currentQuestionIndex = generateMathQuestion();
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answer').value;
+            const resultElement = document.getElementById('result');
+            if (userAnswer === mathQuestions[currentQuestionIndex].answer) {
+                resultElement.textContent = "Correct!";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = "Incorrect. Try again.";
+                resultElement.style.color = "red";
+            }
+            currentQuestionIndex = generateMathQuestion();
+            document.getElementById('answer').value = '';
+        }
     </script>
 </body>
 </html>
