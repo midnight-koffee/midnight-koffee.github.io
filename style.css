@@ -72,3 +72,17 @@ header:hover {
   background-color: #002171;
   transition: background-color 0.3s ease;
 }
+
+
+.chess-widget-container {
+  background-color: #212121; /* Dark gray background */
+  border: 2px solid #0d47a1; /* Dark blue border */
+  border-radius: 5px;
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.chess-widget-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
