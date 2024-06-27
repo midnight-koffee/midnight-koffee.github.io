@@ -1,4 +1,3 @@
-/* style.css */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -60,40 +59,25 @@ section {
 
 #quote-text {
   font-style: italic;
-  font-size: 1.2rem; /* Adjust quote text size */
 }
 
-#trivia {
-  background-color: #212121; /* Dark gray background for trivia */
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-#trivia h2 {
-  color: #90caf9; /* Light blue for trivia section heading */
-}
-
-#trivia p {
-  margin-bottom: 10px;
-}
-
-#daily-puzzle {
+#math-trivia {
   text-align: center;
 }
 
-#puzzle {
-  background-color: #212121; /* Dark gray background for puzzle */
-  padding: 20px;
+.trivia {
+  background-color: #333; /* Darker background for trivia */
+  color: #fff;
+  padding: 15px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-#ct-link {
-  display: block;
-  margin-top: 10px;
-  color: #90caf9; /* Light blue link color */
-  text-decoration: none;
+.trivia p {
+  margin: 0;
+}
+
+.trivia-number {
   font-weight: bold;
 }
 
