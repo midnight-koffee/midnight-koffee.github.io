@@ -85,7 +85,7 @@ section {
 }
 
 #trivia-border {
-  border: 3px solid #0d47a1; /* Dark blue border around the trivia */
+  border: 2px solid #ff9800; /* Orange border for trivia */
   padding: 20px; /* Increased padding for the trivia box */
   border-radius: 10px;
   margin-top: 20px;
@@ -93,6 +93,7 @@ section {
 
 #trivia-text {
   font-style: italic;
+  color: #ff9800; /* Orange text color for trivia */
 }
 
 /* Hover effect for header */
