@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+#quote {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border: 5px solid #ddd;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#links ul {
+  list-style: none;
+  padding: 0;
+}
+
+#links li {
+  margin-bottom: 10px;
+}
+
+#links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+#quote-text {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* Add more styles as needed to customize the look and feel! */
