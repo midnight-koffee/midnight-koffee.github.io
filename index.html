@@ -10,33 +10,68 @@
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
-        .content {
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
             text-align: center;
         }
-        h1 {
-            color: #333;
-            font-size: 3em;
+        nav {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-        p {
-            color: #666;
-            font-size: 1.5em;
-        }
-        a {
-            color: #007bff;
+        nav a {
+            color: #fff;
             text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="content">
+    <header>
         <h1>Welcome to Midnight Koffee!</h1>
-        <p>Your journey into the world of coffee begins here.</p>
-        <p>Visit our <a href="https://github.com/midnight-koffee">GitHub page</a> for more.</p>
-    </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home Page</h2>
+            <p>Welcome to our coffee world!</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about Midnight Koffee.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Discover our range of coffee services.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with Midnight Koffee.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Midnight Koffee. All rights reserved.</p>
+    </footer>
 </body>
 </html>
