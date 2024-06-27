@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divyanshu Kumar</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #121212;
+            background-color: #0d0d0d;
+            color: #d4d4d4;
             margin: 0;
             padding: 0;
-            color: #e0e0e0;
         }
         header {
-            background-color: #1e1e1e;
+            background-color: #1b1b1b;
             color: #f0a500;
             padding: 20px;
             text-align: center;
             border-bottom: 2px solid #f0a500;
         }
         nav {
-            background-color: #333333;
+            background-color: #262626;
             color: #f0a500;
             padding: 10px;
             text-align: center;
@@ -38,7 +39,7 @@
             padding: 20px;
             max-width: 900px;
             margin: 0 auto;
-            background-color: #1e1e1e;
+            background-color: #1b1b1b;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
         }
@@ -53,7 +54,7 @@
             line-height: 1.6;
         }
         footer {
-            background-color: #1e1e1e;
+            background-color: #1b1b1b;
             color: #f0a500;
             padding: 10px;
             text-align: center;
@@ -74,6 +75,7 @@
             font-size: 1.2em;
             margin-top: 20px;
             text-align: center;
+            color: #b3b3b3;
         }
     </style>
 </head>
@@ -84,14 +86,14 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="notes.html">Notes and Problems</a>
-        <a href="CV.pdf" target="_blank">CV</a>
+        <a href="cv.pdf" target="_blank">CV</a>
     </nav>
     <main>
         <section id="about">
             <h2>About Me</h2>
             <p>
                 I have finished my BS-MS in Mathematics from IISER-K and qualified CSIR-NET in 2023.
-                I will be joining <a href="https://www.ashoka.edu.in/" target="_blank">Ashoka University</a> as a teaching fellow in mathematics department for the session 2024-25.
+                I will be joining <a href="https://www.ashoka.edu.in/" target="_blank">Ashoka University</a> as a teaching fellow.
             </p>
         </section>
         <section id="links">
@@ -102,7 +104,6 @@
             </ul>
         </section>
         <div class="quote" id="quote">"Mathematics is the music of reason." - James Joseph Sylvester</div>
-        <button onclick="changeQuote()">Change Quote</button>
     </main>
     <footer>
         <p>&copy; 2024 Divyanshu Kumar.</p>
@@ -113,7 +114,12 @@
             '"Pure mathematics is, in its way, the poetry of logical ideas." - Albert Einstein',
             '"Without mathematics, there’s nothing you can do. Everything around you is mathematics. Everything around you is numbers." - Shakuntala Devi',
             '"Mathematics is the queen of the sciences." - Carl Friedrich Gauss',
-            '"The essence of mathematics lies in its freedom." - Georg Cantor'
+            '"The essence of mathematics lies in its freedom." - Georg Cantor',
+            '"The only way to learn mathematics is to do mathematics." - Paul Halmos',
+            '"Mathematics knows no races or geographic boundaries; for mathematics, the cultural world is one country." - David Hilbert',
+            '"A mathematician is a device for turning coffee into theorems." - Paul Erdős',
+            '"The highest form of pure thought is in mathematics." - Plato',
+            '"There will always be another problem to solve." - Jean-Pierre Serre'
         ];
 
         function changeQuote() {
@@ -121,8 +127,8 @@
             const randomIndex = Math.floor(Math.random() * quotes.length);
             quoteElement.textContent = quotes[randomIndex];
         }
+
+        setInterval(changeQuote, 5000);
     </script>
 </body>
 </html>
-
-
