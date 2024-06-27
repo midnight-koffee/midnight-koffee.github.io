@@ -61,24 +61,38 @@ section {
   font-style: italic;
 }
 
+#daily-puzzle {
+  text-align: center;
+}
+
+#puzzle {
+  background-color: #212121; /* Dark gray background for puzzle */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#ct-link {
+  display: block;
+  margin-top: 10px;
+  color: #90caf9; /* Light blue link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
 #math-trivia {
   text-align: center;
 }
 
-.trivia {
-  background-color: #333; /* Darker background for trivia */
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+#trivia-border {
+  border: 3px solid #0d47a1; /* Dark blue border around the trivia */
+  padding: 20px; /* Increased padding for the trivia box */
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-.trivia p {
-  margin: 0;
-}
-
-.trivia-number {
-  font-weight: bold;
+#trivia-text {
+  font-style: italic;
 }
 
 /* Hover effect for header */
