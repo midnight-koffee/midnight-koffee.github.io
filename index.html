@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Divyanshu Kumar</title>
   <link rel="stylesheet" href="style.css">
+  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
 </head>
 <body>
   <header>
@@ -25,36 +26,55 @@
         <li><a href="certificate_ugc_csir_net.pdf">Joint CSIR NET Certificate</a></li>
       </ul>
     </section>
+    <section id="daily-puzzle">
+      <h2>Daily Chess Puzzle</h2>
+      <div id="puzzle">
+        <div id="puzzle-container"></div>
+        <a id="ct-link" href="https://chesstempo.com/play-chess-online/">Play Chess Online</a>
+      </div>
+    </section>
+    <section id="math-trivia">
+      <h2>Math Trivia</h2>
+      <div id="trivia-border">
+        <p id="trivia-text"></p>
+      </div>
+    </section>
     <section id="quote">
       <div id="quote-border">
         <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
       </div>
     </section>
-    <section id="math-trivia">
-      <h2>Math Trivia</h2>
-      <div class="trivia">
-        <p><span class="trivia-number">1.</span> The shortest mathematically correct sentence is "2 + 2 = 4".</p>
-      </div>
-      <div class="trivia">
-        <p><span class="trivia-number">2.</span> The number 1729 is known as the Hardy-Ramanujan number, after a famous anecdote involving mathematicians G.H. Hardy and Srinivasa Ramanujan.</p>
-      </div>
-      <div class="trivia">
-        <p><span class="trivia-number">3.</span> The ancient Greeks considered 1 to be a number, but not a prime number.</p>
-      </div>
-      <div class="trivia">
-        <p><span class="trivia-number">4.</span> A googol is a large number equal to 10<sup>100</sup>.</p>
-      </div>
-      <div class="trivia">
-        <p><span class="trivia-number">5.</span> The golden ratio, often denoted by the Greek letter phi (φ), is approximately equal to 1.618.</p>
-      </div>
-      <div class="trivia">
-        <p><span class="trivia-number">6.</span> The concept of zero as a number was first developed in India around the 5th century AD.</p>
-      </div>
-      <div class="trivia">
-        <p><span class="trivia-number">7.</span> The largest known prime number has over 24 million digits.</p>
-      </div>
-    </section>
   </main>
+  <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
+  <script>
+    new Puzzle({ pieceSize: 55 });
+  </script>
+  <script>
+    const triviaList = [
+      "The number π (pi) is a mathematical constant that represents the ratio of a circle's circumference to its diameter.",
+      "Fibonacci numbers are a sequence in which each number is the sum of the two preceding ones.",
+      "The Mandelbrot set is a set of complex numbers that forms a fractal when plotted.",
+      "Euler's identity is often cited as an example of mathematical beauty: e^(iπ) + 1 = 0.",
+      "A perfect number is a positive integer that is equal to the sum of its proper divisors.",
+      "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.",
+      "Gödel's incompleteness theorems state that in any consistent formal system, there are statements that are true but cannot be proven within the system."
+    ];
+
+    function rotateTrivia() {
+      const triviaText = document.getElementById('trivia-text');
+      let currentTriviaIndex = 0;
+
+      function updateTrivia() {
+        triviaText.textContent = triviaList[currentTriviaIndex];
+        currentTriviaIndex = (currentTriviaIndex + 1) % triviaList.length;
+      }
+
+      updateTrivia();
+      setInterval(updateTrivia, 5000);
+    }
+
+    document.addEventListener('DOMContentLoaded', rotateTrivia);
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
