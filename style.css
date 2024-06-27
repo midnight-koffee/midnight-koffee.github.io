@@ -2,11 +2,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #fff; /* Light text color */
 }
 
 header {
-  background-color: #1e3c72;
+  background-color: #0d47a1; /* Dark blue header */
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -22,11 +23,11 @@ main {
 }
 
 section {
-  background-color: #fff;
+  background-color: #212121; /* Dark gray background for sections */
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 #links ul {
@@ -40,17 +41,28 @@ section {
 
 #links a {
   text-decoration: none;
-  color: #1e3c72;
+  color: #fff;
   font-weight: bold;
 }
 
-#notes-container {
-  max-width: 800px;
-  margin: 0 auto;
+#quote {
+  text-align: center;
 }
 
-/* Hover effect */
+#quote-border {
+  border: 2px solid #0d47a1; /* Dark blue border around the quote */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#quote-text {
+  font-style: italic;
+}
+
+/* Hover effect for header */
 header:hover {
-  background-color: #0b1e3c;
+  background-color: #002171;
   transition: background-color 0.3s ease;
 }
+
