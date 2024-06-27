@@ -63,26 +63,39 @@ section {
   margin-top: 20px;
 }
 
-#quote-text {
-  font-style: italic;
-}
-
-/* Hover effect for header */
-header:hover {
-  background-color: #002171;
-  transition: background-color 0.3s ease;
-}
-
-
-.chess-widget-container {
+#quote-text {.chess-widget-container {
   background-color: #212121; /* Dark gray background */
   border: 2px solid #0d47a1; /* Dark blue border */
   border-radius: 5px;
   overflow: hidden; /* Hide any overflow content */
 }
 
+
+
+/* Add this section to style the chess puzzle widget */
+
+.chess-widget-container {
+  position: relative;
+  overflow: hidden; /* Hide any overflow content */
+  border: 2px solid #0d47a1; /* Dark blue border */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.chess-widget-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212121; /* Dark gray background */
+  opacity: 0.9; /* Adjust opacity as needed */
+}
+
 .chess-widget-container iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
+
 
