@@ -94,8 +94,20 @@ h2 {
   border: 2px solid #90caf9; /* Light blue border */
   padding: 10px;
   border-radius: 5px;
+  font-family: 'Arial', sans-serif; /* Change font for trivia and quotes */
 }
 
 #contact p {
   margin-bottom: 10px; /* Space between contact links */
+}
+
+/* Adjust link colors in notes.html */
+#notes-list a {
+  text-decoration: none;
+  color: #64b5f6; /* Subtle blue link color */
+  font-weight: bold;
+}
+
+#notes-list a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
