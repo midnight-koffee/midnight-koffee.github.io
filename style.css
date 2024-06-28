@@ -49,6 +49,12 @@ header a:hover {
   padding: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns layout */
+  gap: 20px;
+}
+
 section {
   background-color: #212121; /* Dark gray background for sections */
   padding: 20px;
@@ -64,21 +70,32 @@ h2 {
   margin-bottom: 20px; /* Space below h2 */
 }
 
-#notes-list {
+#links ul {
   list-style: none;
   padding: 0;
 }
 
-#notes-list li {
+#links li {
   margin-bottom: 10px;
 }
 
-#notes-list a {
+#links a {
   text-decoration: none;
   color: #90caf9; /* Light blue link color */
   font-weight: bold;
 }
 
-#notes-list a:hover {
+#links a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+
+#trivia-border,
+#quote-border {
+  border: 2px solid #90caf9; /* Light blue border */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#contact p {
+  margin-bottom: 10px; /* Space between contact links */
 }
