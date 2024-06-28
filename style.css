@@ -127,3 +127,20 @@ h2 {
 #notes-list a:hover {
   text-decoration: underline; /* Underline on hover */
 }
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+
+  #profile-picture {
+    width: 150px; /* Smaller profile picture size */
+    height: 150px;
+  }
+
+  #trivia-border,
+  #quote-border {
+    font-size: 1.4rem; /* Smaller font size for trivia and quotes on small screens */
+  }
+}
