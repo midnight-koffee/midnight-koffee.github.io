@@ -16,23 +16,8 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2rem; /* Smaller font size for h1 */
-  color: #90caf9; /* Subtle blue color for h1 */
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #90caf9; /* Light blue link color */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #e3f2fd;
+  font-size: 1.5rem; /* Smaller font size for h1 */
+  color: #e3f2fd; /* Subtle blue color for h1 */
 }
 
 .container {
