@@ -94,7 +94,7 @@ h2 {
   border: 2px solid #90caf9; /* Light blue border */
   padding: 10px;
   border-radius: 5px;
-  font-family: 'Comic Sans MS', cursive; /* Apply Comic Sans MS font */
+  font-family: 'Lucida Handwriting', 'Brush Script MT', cursive; /* Apply cursive fonts */
   font-size: 1.6rem; /* Smaller font size for trivia and quotes */
   font-style: italic;
 }
