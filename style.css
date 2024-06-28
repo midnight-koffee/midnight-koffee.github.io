@@ -94,6 +94,7 @@ h2 {
   border: 2px solid #90caf9; /* Light blue border */
   padding: 10px;
   border-radius: 5px;
+  font-family: 'Dancing Script', cursive; /* Apply Dancing Script font */
   font-style: italic; /* Italic font style */
 }
 
