@@ -111,8 +111,8 @@ h2 {
 }
 
 #profile-picture {
-  width: 180px; /* Increased width for the profile picture */
-  height: 180px; /* Increased height for the profile picture */
+  width: 250px; /* Increased width for the profile picture */
+  height: 250px; /* Increased height for the profile picture */
   border-radius: 50%; /* Make the picture circular */
   object-fit: cover; /* Ensure the picture covers the entire area */
 }
