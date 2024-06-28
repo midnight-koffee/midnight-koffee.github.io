@@ -20,6 +20,12 @@ header h1 {
   color: #e3f2fd; /* Subtle blue color for h1 */
 }
 
+header h2 {
+  margin: 0;
+  font-size: 1.2rem; /* Smaller font size for h2 */
+  color: #e3f2fd; /* Subtle blue color for h2 */
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -58,77 +64,3 @@ h2 {
 
 #links a {
   text-decoration: none;
-  color: #90caf9; /* Light blue link color */
-  font-weight: bold;
-}
-
-#quote {
-  text-align: center;
-}
-
-#quote-border {
-  border: 3px solid #0d47a1; /* Dark blue border around the quote */
-  padding: 20px; /* Increased padding for the quote box */
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-#quote-text {
-  font-style: italic;
-}
-
-#daily-puzzle {
-  text-align: center;
-}
-
-#puzzle {
-  background-color: #212121; /* Dark gray background for puzzle */
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-#ct-link {
-  display: block;
-  margin-top: 10px;
-  color: #90caf9; /* Light blue link color */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#math-trivia {
-  text-align: center;
-}
-
-#trivia-border {
-  border: 2px solid #1976d2; /* Different blue border for trivia */
-  padding: 15px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-#trivia-text {
-  font-style: italic;
-  color: #90caf9; /* Light blue text color for trivia */
-}
-
-/* Hover effect for header */
-header:hover {
-  background-color: #002171;
-  transition: background-color 0.3s ease;
-}
-
-#contact {
-  text-align: center;
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #212121; /* Dark gray background for contact section */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-#contact a {
-  color: #90caf9; /* Light blue link color for contact details */
-  text-decoration: none;
-  font-weight: bold;
-}
