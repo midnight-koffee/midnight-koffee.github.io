@@ -16,7 +16,8 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem; /* Larger font size for h1 */
+  font-size: 2rem; /* Smaller font size for h1 */
+  color: #90caf9; /* Subtle blue color for h1 */
 }
 
 nav {
@@ -40,10 +41,15 @@ nav a:hover {
   padding: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 section {
   background-color: #212121; /* Dark gray background for sections */
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
