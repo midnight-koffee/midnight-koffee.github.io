@@ -3,89 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Divyanshu Kumar</title>
+  <title>Your Website Title</title>
   <link rel="stylesheet" href="style.css">
-  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
+  <script src="theme-toggle.js" defer></script> <!-- Include script for theme toggle -->
 </head>
 <body>
   <header>
-    <h1>Divyanshu Kumar</h1>
+    <h1>Your Website Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#links">Links</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle-btn">Toggle Theme</button> <!-- Toggle button -->
   </header>
-  <main class="container">
-    <div class="grid-container">
-      <section id="about">
-        <h2>About Me</h2>
-        <div id="profile-picture-container">
-          <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture">
-        </div>
-        <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
-        <p>I will be joining Ashoka University as a Teaching Fellow in the Mathematics Department for the session 2024-25.</p>
-      </section>
-      <section id="links">
-        <h2>Links</h2>
-        <ul>
-          <li><a href="CV.pdf" target="_blank">Download CV</a></li>
-          <li><a href="Mathematical_Diary.pdf" target="_blank">Notes</a></li>
-          <li><a href="notes.html" target="_blank">Mathematical Notes</a></li>
-          <li><a href="JOINT CSIR-UGC NET DECEMBER-2023 _ India.pdf" target="_blank">JRF Award Letter</a></li>
-          <li><a href="certificate_ugc_csir_net.pdf" target="_blank">Joint CSIR NET Certificate</a></li>
-        </ul>
-      </section>
-    </div>
-    <section id="math-trivia">
+
+  <div class="container">
+    <!-- Your website content here -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div id="profile-picture-container">
+        <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture">
+      </div>
+      <p>Your introduction or bio goes here.</p>
+    </section>
+
+    <section id="links">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="cv.pdf" target="_blank">CV</a></li>
+        <li><a href="notes.html" target="_blank">Notes</a></li>
+        <li><a href="jrf_award_letter.pdf" target="_blank">JRF Award Letter</a></li>
+        <li><a href="joint_csir_net_certificate.pdf" target="_blank">Joint CSIR NET Certificate</a></li>
+      </ul>
+    </section>
+
+    <section id="trivia">
+      <h2>Math Trivia</h2>
       <div id="trivia-border">
-        <p id="trivia-text"></p>
+        <!-- Trivia content here -->
       </div>
     </section>
-    <section id="daily-puzzle">
-      <h2>Daily Chess Puzzle</h2>
-      <div id="puzzle">
-        <div id="puzzle-container"></div>
-        <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Phone: <a href="tel:+917667299676" style="color: #90caf9;" target="_blank">+91-7667299676</a></p>
-      <p>Email: <a href="mailto:debu.chatra@gmail.com" style="color: #90caf9;" target="_blank">debu.chatra@gmail.com</a></p>
-      <p>StackExchange: <a href="https://math.stackexchange.com/users/815791/debu" target="_blank" style="color: #90caf9;">math.stackexchange.com/users/815791/debu</a></p>
-    </section>
-    <section id="quote">
+
+    <section id="quotes">
+      <h2>Inspiring Quotes</h2>
       <div id="quote-border">
-        <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
+        <!-- Quotes content here -->
       </div>
     </section>
-  </main>
-  <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
-  <script>
-    new Puzzle({ pieceSize: 55 });
-  </script>
-  <script>
-    const triviaList = [
-      "The number zero was invented independently by the Babylonians, Mayans, and Indians. In mathematics, it is called the additive identity.",
-      "In 1900, David Hilbert presented a list of 23 unsolved problems at the International Congress of Mathematicians in Paris, many of which remain unsolved to this day.",
-      "The Fibonacci sequence appears in many places in nature, including the branching of trees, the arrangement of leaves on a stem, and the fruitlets of a pineapple.",
-      "Leonhard Euler, one of the greatest mathematicians of all time, introduced much of modern mathematical terminology and notation, such as the concept of a function.",
-      "The golden ratio, approximately 1.618, is often encountered in geometry, art, architecture, and nature. It is denoted by the Greek letter φ (phi).",
-      "Srinivasa Ramanujan, an Indian mathematician, made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions.",
-      "Alan Turing, widely considered the father of theoretical computer science and artificial intelligence, developed the concept of a Turing machine, a mathematical model of computation."
-    ];
 
-    function rotateTrivia() {
-      const triviaText = document.getElementById('trivia-text');
-      let currentTriviaIndex = 0;
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Your contact information here.</p>
+    </section>
+  </div>
 
-      function updateTrivia() {
-        triviaText.textContent = triviaList[currentTriviaIndex];
-        currentTriviaIndex = (currentTriviaIndex + 1) % triviaList.length;
-      }
-
-      updateTrivia();
-      setInterval(updateTrivia, 5000);
-    }
-
-    document.addEventListener('DOMContentLoaded', rotateTrivia);
-  </script>
-  <script src="script.js"></script>
 </body>
 </html>
