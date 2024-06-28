@@ -1,9 +1,17 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #1a1a1a; /* Dark background color */
   color: #ddd; /* Light text color */
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -11,19 +19,17 @@ header {
   color: #e3f2fd; /* Subtle blue color for the header text */
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #002171;
+  border-bottom: 2px solid #002171; /* Bottom border for header */
 }
 
 header h1 {
   margin: 0;
   font-size: 1.5rem; /* Smaller font size for h1 */
-  color: #e3f2fd; /* Subtle blue color for h1 */
 }
 
 header h2 {
   margin: 0;
   font-size: 1.2rem; /* Smaller font size for h2 */
-  color: #e3f2fd; /* Subtle blue color for h2 */
 }
 
 .container {
@@ -44,13 +50,14 @@ section {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 20px; /* Space between sections */
 }
 
 h2 {
   font-size: 1.8rem; /* Font size for h2 */
   border-bottom: 2px solid #0d47a1; /* Bottom border for h2 */
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space below h2 */
 }
 
 #links ul {
@@ -69,5 +76,70 @@ h2 {
 }
 
 #links a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
+}
+
+#math-trivia {
+  text-align: center;
+}
+
+#trivia-border {
+  border: 2px solid #1976d2; /* Different blue border for trivia */
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#trivia-text {
+  font-style: italic;
+  color: #90caf9; /* Light blue text color for trivia */
+}
+
+#daily-puzzle {
+  text-align: center;
+}
+
+#puzzle {
+  background-color: #212121; /* Dark gray background for puzzle */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#ct-link {
+  display: block;
+  margin-top: 10px;
+  color: #90caf9; /* Light blue link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a {
+  color: #90caf9; /* Light blue link color for contact section */
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+#quote {
+  text-align: center;
+}
+
+#quote-border {
+  border: 3px solid #0d47a1; /* Dark blue border around the quote */
+  padding: 20px; /* Increased padding for the quote box */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#quote-text {
+  font-style: italic;
+}
+
+/* Hover effect for header */
+header:hover {
+  background-color: #002171;
+  transition: background-color 0.3s ease;
 }
