@@ -94,7 +94,7 @@ h2 {
   border: 2px solid #90caf9; /* Light blue border */
   padding: 10px;
   border-radius: 5px;
-  font-family: 'Arial', sans-serif; /* Change font for trivia and quotes */
+  font-style: italic; /* Italic font style */
 }
 
 #contact p {
