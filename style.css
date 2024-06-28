@@ -64,3 +64,10 @@ h2 {
 
 #links a {
   text-decoration: none;
+  color: #90caf9; /* Light blue link color */
+  font-weight: bold;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
