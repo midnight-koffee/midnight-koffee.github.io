@@ -30,6 +30,7 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  margin-bottom: 20px; /* Added margin-bottom to prevent overlap */
 }
 
 section {
@@ -115,4 +116,19 @@ h2 {
 header:hover {
   background-color: #002171;
   transition: background-color 0.3s ease;
+}
+
+#contact {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #212121; /* Dark gray background for contact section */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#contact a {
+  color: #90caf9; /* Light blue link color for contact details */
+  text-decoration: none;
+  font-weight: bold;
 }
