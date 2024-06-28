@@ -8,44 +8,51 @@
   <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h2>Divyanshu Kumar</h2>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
-        <p>I will be joining Ashoka University as a Teaching Fellow in the Mathematics Department for the session 2024-25.</p>
-      </section>
-      <section id="links">
-        <h2>Links</h2>
-        <ul>
-          <li><a href="CV.pdf">Download CV</a></li>
-          <li><a href="Mathematical_Diary.pdf">Notes</a></li>
-          <li><a href="JOINT CSIR-UGC NET DECEMBER-2023 _ India.pdf">JRF Award Letter</a></li>
-          <li><a href="certificate_ugc_csir_net.pdf">Joint CSIR NET Certificate</a></li>
-        </ul>
-      </section>
-      <section id="math-trivia">
-        <div id="trivia-border">
-          <p id="trivia-text"></p>
-        </div>
-      </section>
-      <section id="daily-puzzle">
-        <h2>Daily Chess Puzzle</h2>
-        <div id="puzzle">
-          <div id="puzzle-container"></div>
-          <a id="ct-link" href="https://chesstempo.com/play-chess-online/">Play Chess Online</a>
-        </div>
-      </section>
-      <section id="quote">
-        <div id="quote-border">
-          <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
-        </div>
-      </section>
-    </main>
-  </div>
+  <header>
+    <h1>Divyanshu Kumar</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#links">Links</a>
+      <a href="#math-trivia">Trivia</a>
+      <a href="#daily-puzzle">Puzzle</a>
+      <a href="#quote">Quote</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
+      <p>I will be joining Ashoka University as a Teaching Fellow in the Mathematics Department for the session 2024-25.</p>
+    </section>
+    <section id="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="CV.pdf">Download CV</a></li>
+        <li><a href="Mathematical_Diary.pdf">Notes</a></li>
+        <li><a href="JOINT CSIR-UGC NET DECEMBER-2023 _ India.pdf">JRF Award Letter</a></li>
+        <li><a href="certificate_ugc_csir_net.pdf">Joint CSIR NET Certificate</a></li>
+      </ul>
+    </section>
+    <section id="math-trivia">
+      <h2>Interesting Math Facts</h2>
+      <div id="trivia-border">
+        <p id="trivia-text"></p>
+      </div>
+    </section>
+    <section id="daily-puzzle">
+      <h2>Daily Chess Puzzle</h2>
+      <div id="puzzle">
+        <div id="puzzle-container"></div>
+        <a id="ct-link" href="https://chesstempo.com/play-chess-online/">Play Chess Online</a>
+      </div>
+    </section>
+    <section id="quote">
+      <h2>Quote</h2>
+      <div id="quote-border">
+        <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
+      </div>
+    </section>
+  </main>
   <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
   <script>
     new Puzzle({ pieceSize: 55 });
