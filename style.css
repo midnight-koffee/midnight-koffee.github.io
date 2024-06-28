@@ -94,7 +94,8 @@ h2 {
   border: 2px solid #90caf9; /* Light blue border */
   padding: 10px;
   border-radius: 5px;
-  font-family: 'Caveat', cursive; /* Apply Caveat font */
+  font-family: 'Comic Sans MS', cursive; /* Apply Comic Sans MS font */
+  font-style: italic;
 }
 
 #contact p {
