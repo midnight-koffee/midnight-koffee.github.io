@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #0d47a1; /* Dark blue header */
+  background-color: rgba(13, 71, 161, 0.9); /* Dark blue header with transparency */
   color: #e3f2fd; /* Subtle blue color for the header text */
   padding: 20px;
   display: flex;
@@ -56,7 +56,7 @@ header a:hover {
 }
 
 section {
-  background-color: #212121; /* Dark gray background for sections */
+  background-color: rgba(33, 33, 33, 0.8); /* Dark gray background with transparency */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -68,6 +68,7 @@ h2 {
   border-bottom: 2px solid #0d47a1; /* Bottom border for h2 */
   padding-bottom: 10px;
   margin-bottom: 20px; /* Space below h2 */
+  color: #90caf9; /* Light blue color for h2 */
 }
 
 #links ul {
@@ -97,10 +98,13 @@ h2 {
   font-family: 'Lucida Handwriting', 'Brush Script MT', cursive; /* Apply cursive fonts */
   font-size: 1.6rem; /* Smaller font size for trivia and quotes */
   font-style: italic;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  color: #ddd; /* Light text color */
 }
 
 #contact p {
   margin-bottom: 10px; /* Space between contact links */
+  color: #90caf9; /* Light blue color for contact text */
 }
 
 #profile-picture-container {
@@ -115,6 +119,7 @@ h2 {
   height: 250px; /* Increased height for the profile picture */
   border-radius: 50%; /* Make the picture circular */
   object-fit: cover; /* Ensure the picture covers the entire area */
+  border: 5px solid rgba(0, 0, 0, 0.2); /* Light border with transparency */
 }
 
 /* Adjust link colors in notes.html */
