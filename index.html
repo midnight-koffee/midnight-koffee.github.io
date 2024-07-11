@@ -1,100 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyanshu Kumar</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        /* Additional CSS styles specific to index.html */
-        #notes-content {
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-top: 20px;
-        }
-        #notes-content a {
-            color: #f39c12;
-        }
-        #notes-content a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divyanshu Kumar</title>
+  <link rel="stylesheet" href="style.css">
+  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
 </head>
 <body>
-    <header>
-        <h1>Divyanshu Kumar</h1>
-    </header>
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <div id="profile-picture-container">
-                <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture">
-            </div>
-            <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
-            <p>I will be joining Ashoka University as a Teaching Fellow in the Mathematics Department for the session 2024-25.</p>
-        </section>
-        <section id="links">
-            <h2>Links</h2>
-            <ul>
-                <li><a href="CV.pdf" target="_blank">Download CV</a></li>
-                <li><a href="Mathematical_Diary.pdf" target="_blank">Notes</a></li>
-                <li><a href="notes.html" target="_blank">Mathematical Notes</a></li>
-                <li><a href="JOINT CSIR-UGC NET DECEMBER-2023 _ India.pdf" target="_blank">JRF Award Letter</a></li>
-                <li><a href="certificate_ugc_csir_net.pdf" target="_blank">Joint CSIR NET Certificate</a></li>
-            </ul>
-        </section>
-        <section id="math-trivia">
-            <h2>Math Trivia</h2>
-            <div id="trivia-border">
-                <p id="trivia-text"></p>
-            </div>
-        </section>
-        <section id="daily-puzzle">
-            <h2>Daily Chess Puzzle</h2>
-            <div id="puzzle">
-                <div id="puzzle-container"></div>
-                <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
-            </div>
-        </section>
-        <section id="notes">
-            <h2>Mathematical Notes</h2>
-            <div id="notes-content">
-                <!-- Content from notes.md will be loaded here -->
-            </div>
-            <p><a href="https://github.com/HoML/Chap1/blob/main/notes.md" target="_blank">Read More</a></p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Phone: <a href="tel:+917667299676" style="color: #90caf9;" target="_blank">+91-7667299676</a></p>
-            <p>Email: <a href="mailto:debu.chatra@gmail.com" style="color: #90caf9;" target="_blank">debu.chatra@gmail.com</a></p>
-            <!--<p>StackExchange: <a href="https://math.stackexchange.com/users/815791/debu" target="_blank" style="color: #90caf9;">math.stackexchange.com/users/815791/debu</a></p> -->
-        </section>
-        <section id="quote">
-            <h2>Quote</h2>
-            <div id="quote-border">
-                <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('https://raw.githubusercontent.com/HoML/Chap1/main/notes.md')
-                .then(response => response.text())
-                .then(data => {
-                    const notesContent = document.getElementById('notes-content');
-                    notesContent.innerHTML = marked(data); // Using marked.js to render Markdown
-                })
-                .catch(error => {
-                    console.error('Error fetching notes.md:', error);
-                    const notesContent = document.getElementById('notes-content');
-                    notesContent.innerHTML = '<p>Failed to load notes. Please try again later.</p>';
-                });
-        });
-    </script>
+  <header>
+    <h1>Divyanshu Kumar</h1>
+  </header>
+  <main class="container">
+    <div class="grid-container">
+      <section id="about">
+        <h2>About Me</h2>
+        <div id="profile-picture-container">
+          <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture">
+        </div>
+        <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
+        <p>I will be joining Ashoka University as a Teaching Fellow in the Mathematics Department for the session 2024-25.</p>
+      </section>
+      <section id="links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="CV.pdf" target="_blank">Download CV</a></li>
+          <li><a href="Mathematical_Diary.pdf" target="_blank">Notes</a></li>
+          <li><a href="notes.html" target="_blank">Mathematical Notes</a></li>
+          <li><a href="JOINT CSIR-UGC NET DECEMBER-2023 _ India.pdf" target="_blank">JRF Award Letter</a></li>
+          <li><a href="certificate_ugc_csir_net.pdf" target="_blank">Joint CSIR NET Certificate</a></li>
+        </ul>
+      </section>
+    </div>
+    <section id="math-trivia">
+      <div id="trivia-border">
+        <p id="trivia-text"></p>
+      </div>
+    </section>
+    <section id="daily-puzzle">
+      <h2>Daily Chess Puzzle</h2>
+      <div id="puzzle">
+        <div id="puzzle-container"></div>
+        <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Phone: <a href="tel:+917667299676" style="color: #90caf9;" target="_blank">+91-7667299676</a></p>
+      <p>Email: <a href="mailto:debu.chatra@gmail.com" style="color: #90caf9;" target="_blank">debu.chatra@gmail.com</a></p>
+      <!--<p>StackExchange: <a href="https://math.stackexchange.com/users/815791/debu" target="_blank" style="color: #90caf9;">math.stackexchange.com/users/815791/debu</a></p> -->
+    </section>
+    <section id="quote">
+      <div id="quote-border">
+        <p id="quote-text">"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</p>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
+  <script>
+    new Puzzle({ pieceSize: 55 });
+  </script>
+  <script>
+    const triviaList = [
+      "The number zero was invented independently by the Babylonians, Mayans, and Indians. In mathematics, it is called the additive identity.",
+      "In 1900, David Hilbert presented a list of 23 unsolved problems at the International Congress of Mathematicians in Paris, many of which remain unsolved to this day.",
+      "The Fibonacci sequence appears in many places in nature, including the branching of trees, the arrangement of leaves on a stem, and the fruitlets of a pineapple.",
+      "Leonhard Euler, one of the greatest mathematicians of all time, introduced much of modern mathematical terminology and notation, such as the concept of a function.",
+      "The golden ratio, approximately 1.618, is often encountered in geometry, art, architecture, and nature. It is denoted by the Greek letter φ (phi).",
+      "Srinivasa Ramanujan, an Indian mathematician, made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions.",
+      "Alan Turing, widely considered the father of theoretical computer science and artificial intelligence, developed the concept of a Turing machine, a mathematical model of computation."
+    ];
+
+    function rotateTrivia() {
+      const triviaText = document.getElementById('trivia-text');
+      let currentTriviaIndex = 0;
+
+      function updateTrivia() {
+        triviaText.textContent = triviaList[currentTriviaIndex];
+        currentTriviaIndex = (currentTriviaIndex + 1) % triviaList.length;
+      }
+
+      updateTrivia();
+      setInterval(updateTrivia, 5000);
+    }
+
+    document.addEventListener('DOMContentLoaded', rotateTrivia);
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
