@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Divyanshu Kumar</title>
   <link rel="stylesheet" href="style.css">
+  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
 </head>
 <body>
   <header>
@@ -47,6 +48,7 @@
       <h2>Contact</h2>
       <p>Phone: <a href="tel:+917667299676" style="color: #90caf9;" target="_blank">+91-7667299676</a></p>
       <p>Email: <a href="mailto:debu.chatra@gmail.com" style="color: #90caf9;" target="_blank">debu.chatra@gmail.com</a></p>
+      <!--<p>StackExchange: <a href="https://math.stackexchange.com/users/815791/debu" target="_blank" style="color: #90caf9;">math.stackexchange.com/users/815791/debu</a></p> -->
     </section>
     <section id="quote">
       <div id="quote-border">
@@ -54,6 +56,10 @@
       </div>
     </section>
   </main>
+  <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
+  <script>
+    new Puzzle({ pieceSize: 55 });
+  </script>
   <script>
     const triviaList = [
       "The number zero was invented independently by the Babylonians, Mayans, and Indians. In mathematics, it is called the additive identity.",
@@ -80,5 +86,6 @@
 
     document.addEventListener('DOMContentLoaded', rotateTrivia);
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
