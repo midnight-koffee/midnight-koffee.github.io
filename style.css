@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: rgba(13, 71, 161, 0.9); /* Dark blue header with transparency */
+  background-color: #0d47a1; /* Dark blue header */
   color: #e3f2fd; /* Subtle blue color for the header text */
   padding: 20px;
   display: flex;
@@ -45,8 +45,11 @@ header a:hover {
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
+  background-color: rgba(33, 33, 33, 0.9); /* Slightly transparent dark gray */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
 }
 
 .grid-container {
@@ -56,38 +59,42 @@ header a:hover {
 }
 
 section {
-  background-color: rgba(33, 33, 33, 0.8); /* Dark gray background with transparency */
+  background-color: rgba(33, 33, 33, 0.9); /* Slightly transparent dark gray */
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px; /* Space between sections */
+  color: #ddd; /* Light text color */
 }
 
 h2 {
-  font-size: 1.6rem; /* Updated font size for h2 */
+  font-size: 1.8rem; /* Larger font size for headings */
   border-bottom: 2px solid #0d47a1; /* Bottom border for h2 */
   padding-bottom: 10px;
   margin-bottom: 20px; /* Space below h2 */
-  color: #90caf9; /* Light blue color for h2 */
 }
 
-#links ul {
+ul {
   list-style: none;
   padding: 0;
 }
 
-#links li {
-  margin-bottom: 10px;
-}
-
-#links a {
-  text-decoration: none;
+a {
   color: #90caf9; /* Light blue link color */
+  text-decoration: none;
   font-weight: bold;
 }
 
-#links a:hover {
+a:hover {
   text-decoration: underline; /* Underline on hover */
+}
+
+#profile-picture {
+  width: 250px; /* Increased width for the profile picture */
+  height: 250px; /* Increased height for the profile picture */
+  border-radius: 50%; /* Make the picture circular */
+  object-fit: cover; /* Ensure the picture covers the entire area */
+  border: 5px solid #0d47a1; /* Blue border around profile picture */
 }
 
 #trivia-border,
@@ -98,31 +105,13 @@ h2 {
   font-family: 'Lucida Handwriting', 'Brush Script MT', cursive; /* Apply cursive fonts */
   font-size: 1.6rem; /* Smaller font size for trivia and quotes */
   font-style: italic;
-  background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
-  color: #ddd; /* Light text color */
 }
 
-#contact p {
-  margin-bottom: 10px; /* Space between contact links */
-  color: #90caf9; /* Light blue color for contact text */
+#notes-list {
+  list-style: none;
+  padding: 0;
 }
 
-#profile-picture-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-#profile-picture {
-  width: 250px; /* Increased width for the profile picture */
-  height: 250px; /* Increased height for the profile picture */
-  border-radius: 50%; /* Make the picture circular */
-  object-fit: cover; /* Ensure the picture covers the entire area */
-  border: 5px solid rgba(0, 0, 0, 0.2); /* Light border with transparency */
-}
-
-/* Adjust link colors in notes.html */
 #notes-list a {
   text-decoration: none;
   color: #64b5f6; /* Subtle blue link color */
