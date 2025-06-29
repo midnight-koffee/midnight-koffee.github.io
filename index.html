@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divyanshu Kumar</title>
-  <link rel="stylesheet" href="style.css">
-  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css"/>
+
+  <style>
+    /* Style the CSIR-NET dropdown to match other links */
+    .csir-dropdown summary {
+      list-style: none;
+    }
+
+    .csir-dropdown summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .csir-dropdown summary {
+      cursor: pointer;
+    }
+
+    .csir-dropdown summary span {
+      color: #90caf9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .csir-dropdown ul {
+      margin-top: 0.5em;
+      padding-left: 1.5em;
+    }
+
+    .csir-dropdown ul li a {
+      color: #90caf9;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .csir-dropdown ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Divyanshu Kumar</h1>
   </header>
+
   <main class="container">
     <div class="grid-container">
       <section id="about">
         <h2>About Me</h2>
         <div id="profile-picture-container">
-          <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture">
+          <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture"/>
         </div>
         <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
         <p>From August 2024 to May 2025, I worked as a Teaching Fellow at Ashoka University, where I helped teach courses on calculus, probability, and statistical inference.</p>
@@ -29,9 +67,10 @@
           <li><a href="CV.pdf" target="_blank">Download CV</a></li>
           <li><a href="Mathematical_Diary.pdf" target="_blank">Notes</a></li>
           <li><a href="notes.html" target="_blank">Mathematical Notes</a></li>
-          <li>
+
+          <li class="csir-dropdown">
             <details>
-              <summary><strong>CSIR-NET Documents</strong></summary>
+              <summary><span>CSIR-NET Documents</span></summary>
               <ul>
                 <li><a href="csir/JOINT%20CSIR-UGC%20NET%20DECEMBER-2023%20_%20India.pdf" target="_blank">JRF Award Letter</a></li>
                 <li><a href="csir/certificate_ugc_csir_net.pdf" target="_blank">CSIR-NET Certificate</a></li>
@@ -100,6 +139,7 @@
 
     document.addEventListener('DOMContentLoaded', rotateTrivia);
   </script>
+
   <script src="script.js"></script>
 </body>
 </html>
