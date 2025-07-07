@@ -8,160 +8,143 @@
 /* Global styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1a1a1a; /* Dark background color */
-  color: #ddd; /* Light text color */
-  margin: 0;
-  padding: 0;
+  background-color: #121212;
+  color: #ddd;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #0d47a1; /* Dark blue header */
-  color: #e3f2fd; /* Subtle blue color for the header text */
+  background-color: #0d47a1;
+  color: #e3f2fd;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #002171; /* Bottom border for header */
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.5rem; /* Smaller font size for h1 */
+  font-size: 1.8rem;
 }
 
 header nav {
-  margin-right: 20px;
+  display: flex;
+  gap: 1rem;
 }
 
-header a {
-  color: #90caf9; /* Light blue link color */
+header nav a {
+  color: #bbdefb;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
-header a:hover {
-  text-decoration: underline; /* Underline on hover */
+header nav a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns layout */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
 
+/* Section styling */
 section {
-  background-color: #212121; /* Dark gray background for sections */
+  background-color: #1e1e1e;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin-bottom: 20px; /* Space between sections */
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 h2 {
-  font-size: 1.6rem; /* Updated font size for h2 */
-  border-bottom: 2px solid #0d47a1; /* Bottom border for h2 */
-  padding-bottom: 10px;
-  margin-bottom: 20px; /* Space below h2 */
+  font-size: 1.6rem;
+  color: #90caf9;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0d47a1;
 }
 
+/* About/Profile styling */
+#profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0d47a1;
+}
+
+/* Links section styling */
 #links ul {
   list-style: none;
-  padding: 0;
-}
-
-#links li {
-  margin-bottom: 10px;
 }
 
 #links a {
+  color: #90caf9;
   text-decoration: none;
-  color: #90caf9; /* Light blue link color */
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #links a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
-#trivia-border,
-#quote-border {
-  border: 2px solid #90caf9; /* Light blue border */
-  padding: 10px;
-  border-radius: 5px;
-  font-family: 'Lucida Handwriting', 'Brush Script MT', cursive; /* Apply cursive fonts */
-  font-size: 1.6rem; /* Smaller font size for trivia and quotes */
+/* CSIR details dropdown */
+.csir-dropdown summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #90caf9;
+}
+
+.csir-dropdown details[open] > summary {
+  color: #fff;
+}
+
+.csir-dropdown ul {
+  margin-top: 10px;
+  padding-left: 1.4em;
+}
+
+.csir-dropdown ul li a {
+  color: #90caf9;
   font-style: italic;
-}
-
-#contact p {
-  margin-bottom: 10px; /* Space between contact links */
-}
-
-#profile-picture-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-#profile-picture {
-  width: 250px; /* Increased width for the profile picture */
-  height: 250px; /* Increased height for the profile picture */
-  border-radius: 50%; /* Make the picture circular */
-  object-fit: cover; /* Ensure the picture covers the entire area */
-}
-
-/* Adjust link colors in notes.html */
-#notes-list a {
   text-decoration: none;
-  color: #64b5f6; /* Subtle blue link color */
-  font-weight: bold;
 }
 
-#notes-list a:hover {
-  text-decoration: underline; /* Underline on hover */
+.csir-dropdown ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Single column layout for small screens */
-  }
-
-  #profile-picture {
-    width: 150px; /* Smaller profile picture size */
-    height: 150px;
-  }
-
-  #trivia-border,
-  #quote-border {
-    font-size: 1.4rem; /* Smaller font size for trivia and quotes on small screens */
-  }
+/* Trivia and Quote */
+#trivia-border, #quote-border {
+  border: 2px solid #90caf9;
+  padding: 15px;
+  border-radius: 7px;
+  font-style: italic;
+  background-color: #222;
 }
 
+/* Projects area */
 #projects {
-  padding: 40px 0;
-  background-color: #f5f5f5;
-  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  margin: 30px auto;
+  background: #2b2b2b;
   padding: 20px;
+  border-radius: 12px;
   max-width: 700px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease-in-out;
+  margin: 0 auto 40px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease;
 }
 
 .project-card:hover {
@@ -170,40 +153,49 @@ h2 {
 
 .project-thumb {
   width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
   margin-bottom: 15px;
 }
 
 .project-content h3 {
-  margin: 10px 0;
-  color: #333;
+  color: #90caf9;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
 .project-content p {
-  color: #555;
+  color: #ccc;
   font-size: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .project-video {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  max-width: 600px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.github-link {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #2196f3;
-  color: white;
+/* Styling for CV_old.pdf — mark as untracked */
+.hidden-file { display: none; }
+
+/* Contact section */
+#contact a {
+  color: #90caf9;
   text-decoration: none;
-  border-radius: 6px;
 }
 
-.github-link:hover {
-  background-color: #1976d2;
+#contact a:hover {
+  text-decoration: underline;
 }
 
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
