@@ -5,7 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divyanshu Kumar</title>
   <link rel="stylesheet" href="style.css"/>
-  <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css"/>
+
+  <style>
+    .csir-dropdown summary {
+      list-style: none;
+    }
+    .csir-dropdown summary::-webkit-details-marker {
+      display: none;
+    }
+    .csir-dropdown summary {
+      cursor: pointer;
+    }
+    .csir-dropdown summary span {
+      color: #90caf9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .csir-dropdown ul {
+      margin-top: 0.5em;
+      padding-left: 1.5em;
+    }
+    .csir-dropdown ul li a {
+      color: #90caf9;
+      text-decoration: none;
+      font-style: italic;
+    }
+    .csir-dropdown ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -68,15 +96,6 @@
       </div>
     </section>
 
- <section id="daily-puzzle">
-  <h2>Daily Chess Puzzle</h2>
-  <div id="puzzle-wrapper">
-    <div id="puzzle-container"></div>
-    <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
-  </div>
-</section>
-
-
     <section id="contact">
       <h2>Contact</h2>
       <p>Phone: <a href="tel:+917667299676" target="_blank">+91-7667299676</a></p>
@@ -90,18 +109,15 @@
     </section>
   </main>
 
-  <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
   <script>
-    new Puzzle({ pieceSize: 55 });
-
     const triviaList = [
-      "The number zero was invented independently by the Babylonians, Mayans, and Indians.",
-      "Hilbert’s 23 problems still shape modern mathematics.",
-      "The Fibonacci sequence shows up in pineapples and pinecones.",
-      "Euler introduced much of modern mathematical notation.",
-      "The golden ratio (φ ≈ 1.618) appears in art and nature.",
-      "Ramanujan made deep contributions to number theory and series.",
-      "Alan Turing laid the groundwork for AI and computing."
+      "The number zero was invented independently by the Babylonians, Mayans, and Indians. In mathematics, it is called the additive identity.",
+      "In 1900, David Hilbert presented a list of 23 unsolved problems at the International Congress of Mathematicians in Paris, many of which remain unsolved to this day.",
+      "The Fibonacci sequence appears in many places in nature, including the branching of trees, the arrangement of leaves on a stem, and the fruitlets of a pineapple.",
+      "Leonhard Euler, one of the greatest mathematicians of all time, introduced much of modern mathematical terminology and notation, such as the concept of a function.",
+      "The golden ratio, approximately 1.618, is often encountered in geometry, art, architecture, and nature. It is denoted by the Greek letter φ (phi).",
+      "Srinivasa Ramanujan, an Indian mathematician, made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions.",
+      "Alan Turing, widely considered the father of theoretical computer science and artificial intelligence, developed the concept of a Turing machine, a mathematical model of computation."
     ];
 
     function rotateTrivia() {
