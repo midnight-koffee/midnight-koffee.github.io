@@ -123,7 +123,8 @@ h2 {
 }
 
 /* Trivia and Quote */
-#trivia-border, #quote-border {
+#trivia-border,
+#quote-border {
   border: 2px solid #90caf9;
   padding: 15px;
   border-radius: 7px;
@@ -131,7 +132,7 @@ h2 {
   background-color: #222;
 }
 
-/* Project section */
+/* Projects section */
 #projects {
   margin-top: 30px;
   padding: 20px;
@@ -187,6 +188,65 @@ h2 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
+/* Daily Chess Puzzle */
+#daily-puzzle {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-align: left;
+}
+
+#daily-puzzle h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #90caf9;
+  border-bottom: 2px solid #0d47a1;
+  padding-bottom: 5px;
+}
+
+#puzzle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+#puzzle-container {
+  width: 240px;
+  height: 240px;
+  border: 2px solid #444;
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+
+#ct-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #37474f;
+  color: #e3f2fd;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+#ct-link:hover {
+  background-color: #455a64;
+}
+
+/* Contact section */
+#contact a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive tweaks */
 @media only screen and (max-width: 700px) {
   .project-card {
@@ -200,68 +260,11 @@ h2 {
     max-width: 100%;
   }
 
-  .project-video {
-    max-width: 100%;
+  #puzzle {
+    align-items: center;
   }
 }
 
-/* Chess Puzzle Section */
-#daily-puzzle {
-  background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#daily-puzzle h2 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: #90caf9;
-  border-bottom: 2px solid #0d47a1;
-  padding-bottom: 5px;
-}
-
-#puzzle-container {
-  margin: 0 auto;
-  width: 240px;
-  height: 240px;
-  border: 2px solid #444;
-  border-radius: 6px;
-}
-
-#ct-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 6px 12px;
-  background-color: #37474f;
-  color: #e3f2fd;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-  transition: background-color 0.2s ease;
-}
-
-#ct-link:hover {
-  background-color: #455a64;
-}
-
-/* Contact section restore alignment */
-#contact,
-#quote {
-  text-align: left;
-}
-
-/* Hide untracked file */
-.hidden-file {
-  display: none;
-}
-
-/* Responsive layout */
 @media only screen and (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;
