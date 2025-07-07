@@ -26,6 +26,7 @@ header h1 {
   font-size: 1.8rem;
 }
 
+/* Main container */
 .container {
   max-width: 800px;
   margin: auto;
@@ -79,7 +80,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Projects */
+/* Projects section */
 #projects {
   background-color: #1a1a1a;
 }
@@ -150,6 +151,7 @@ h2 {
   margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   text-align: left;
+  clear: both;
 }
 
 #daily-puzzle h2 {
@@ -165,6 +167,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 #puzzle-container {
@@ -176,6 +179,7 @@ h2 {
 
 #ct-link {
   display: inline-block;
+  margin-top: 8px;
   padding: 6px 12px;
   background-color: #37474f;
   color: #e3f2fd;
@@ -200,7 +204,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media only screen and (max-width: 700px) {
   .project-card {
     flex-direction: column;
@@ -215,6 +219,11 @@ h2 {
 
   #puzzle {
     align-items: center;
+  }
+
+  #puzzle-container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
