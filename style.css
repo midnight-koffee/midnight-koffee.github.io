@@ -250,16 +250,18 @@ h2 {
 #ct-link {
   display: inline-block;
   margin-top: 15px;
-  padding: 8px 14px;
-  background-color: #2196f3;
-  color: white;
+  padding: 6px 12px;
+  background-color: #37474f;  /* Muted bluish-gray */
+  color: #e3f2fd;  /* Soft light blue text */
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
 }
 
 #ct-link:hover {
-  background-color: #1976d2;
+  background-color: #455a64;  /* Slightly brighter on hover */
 }
+
 
