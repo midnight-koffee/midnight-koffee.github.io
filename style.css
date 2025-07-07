@@ -131,54 +131,53 @@ h2 {
   background-color: #222;
 }
 
-/* Projects area */
 #projects {
-  padding: 40px 20px;
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #1a1a1a;
 }
 
 .project-card {
-  background: #2b2b2b;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
+  background: #1e1e1e;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .project-thumb {
   width: 100%;
-  max-width: 600px;
+  max-width: 350px;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.6);
 }
 
 .project-content h3 {
   color: #90caf9;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
 .project-content p {
+  font-size: 0.95rem;
   color: #ccc;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 15px;
+  padding: 0 10px;
 }
 
 .project-video {
   width: 100%;
-  max-width: 600px;
-  border: 2px solid #444;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #444;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
+
 
 /* Styling for CV_old.pdf — mark as untracked */
 .hidden-file { display: none; }
