@@ -221,3 +221,45 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+#daily-puzzle {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+#daily-puzzle h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #90caf9;
+  border-bottom: 2px solid #0d47a1;
+  padding-bottom: 5px;
+}
+
+#puzzle-container {
+  margin: 0 auto;
+  width: 240px;  /* Smaller board */
+  height: 240px;
+  border: 2px solid #444;
+  border-radius: 6px;
+}
+
+#ct-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#ct-link:hover {
+  background-color: #1976d2;
+}
+
