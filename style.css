@@ -178,10 +178,14 @@ h2 {
 
 .project-video {
   width: 100%;
+  max-width: 250px;      /* Match the thumbnail width */
+  height: auto;
+  aspect-ratio: 16 / 9;  /* Maintain video shape like YouTube preview */
   border-radius: 6px;
   border: 1px solid #444;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
+
 
 /* Responsive tweak */
 @media only screen and (max-width: 700px) {
