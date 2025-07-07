@@ -4,299 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divyanshu Kumar</title>
+  <link rel="stylesheet" href="style.css"/>
   <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css"/>
-  <style>
-    /* Reset default styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Global styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #ddd;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #0d47a1;
-      color: #e3f2fd;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-    }
-
-    section {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      color: #90caf9;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid #0d47a1;
-    }
-
-    /* Profile picture */
-    #profile-picture {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #0d47a1;
-    }
-
-    /* Links */
-    #links ul {
-      list-style: none;
-    }
-
-    #links a {
-      color: #90caf9;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    #links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Projects */
-    #projects {
-      background-color: #1a1a1a;
-    }
-
-    .project-card {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: flex-start;
-      background: #1e1e1e;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-      max-width: 800px;
-      margin: 0 auto 40px;
-    }
-
-    .project-thumb {
-      flex: 1 1 250px;
-      max-width: 250px;
-      border-radius: 8px;
-      object-fit: cover;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.6);
-    }
-
-    .project-content {
-      flex: 2 1 450px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .project-content h3 {
-      color: #90caf9;
-      font-size: 1.3rem;
-      margin-bottom: 5px;
-    }
-
-    .project-content p {
-      font-size: 0.95rem;
-      color: #ccc;
-    }
-
-    .project-video {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-      aspect-ratio: 16 / 9;
-      border-radius: 6px;
-      border: 1px solid #444;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    }
-
-    /* Trivia and quote */
-    #trivia-border, #quote-border {
-      border: 2px solid #90caf9;
-      padding: 15px;
-      border-radius: 7px;
-      font-style: italic;
-      background-color: #222;
-    }
-
-    /* Chess Puzzle - Critical fixes */
-    #daily-puzzle {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-      /* Force stacking context and containment */
-      position: relative;
-      z-index: 1;
-      clear: both;
-      overflow: hidden;
-    }
-
-    #puzzle-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      width: 100%;
-      /* Ensure containment */
-      position: relative;
-      z-index: 2;
-    }
-
-    #puzzle-container {
-      width: 280px;
-      height: 280px;
-      border: 2px solid #444;
-      border-radius: 6px;
-      position: relative;
-      /* Critical: Force ChessTempo elements to stay within */
-      overflow: visible;
-    }
-
-    /* Override ChessTempo's default positioning */
-    #puzzle-container * {
-      position: relative !important;
-      float: none !important;
-    }
-
-    /* Style the difficulty buttons that ChessTempo injects */
-    #daily-puzzle .ct-puzzle-difficulty,
-    #daily-puzzle .ct-difficulty-buttons,
-    #daily-puzzle .ct-button,
-    #daily-puzzle input[type="button"] {
-      display: inline-block !important;
-      margin: 5px !important;
-      padding: 8px 16px !important;
-      background-color: #37474f !important;
-      color: #e3f2fd !important;
-      border: 1px solid #555 !important;
-      border-radius: 4px !important;
-      cursor: pointer !important;
-      font-size: 0.9rem !important;
-      position: relative !important;
-      float: none !important;
-      clear: none !important;
-    }
-
-    #daily-puzzle .ct-puzzle-difficulty:hover,
-    #daily-puzzle .ct-difficulty-buttons:hover,
-    #daily-puzzle .ct-button:hover,
-    #daily-puzzle input[type="button"]:hover {
-      background-color: #455a64 !important;
-    }
-
-    /* Force difficulty buttons to appear in the right place */
-    #daily-puzzle .ct-puzzle-difficulty {
-      text-align: center !important;
-      width: 100% !important;
-      margin-top: 10px !important;
-    }
-
-    #ct-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 6px 12px;
-      background-color: #37474f;
-      color: #e3f2fd;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-      transition: background-color 0.2s ease;
-    }
-
-    #ct-link:hover {
-      background-color: #455a64;
-    }
-
-    /* Ensure subsequent sections don't float around puzzle */
-    #daily-puzzle + section {
-      clear: both;
-      margin-top: 30px;
-    }
-
-    /* Contact */
-    #contact {
-      clear: both;
-      position: relative;
-      z-index: 1;
-    }
-
-    #contact a {
-      color: #90caf9;
-      text-decoration: none;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* Additional containment for ChessTempo elements */
-    .ct-puzzle-wrapper,
-    .ct-puzzle-container {
-      position: relative !important;
-      float: none !important;
-      display: block !important;
-      width: 100% !important;
-      text-align: center !important;
-    }
-
-    /* Responsive tweaks */
-    @media only screen and (max-width: 700px) {
-      .project-card {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .project-thumb,
-      .project-content {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
-
-      #puzzle-container {
-        width: 240px;
-        height: 240px;
-      }
-    }
-
-    @media only screen and (max-width: 600px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -309,26 +18,26 @@
       <section id="about">
         <h2>About Me</h2>
         <div id="profile-picture-container">
-          <img id="profile-picture" src="https://via.placeholder.com/200x200/0d47a1/ffffff?text=Profile" alt="Profile Picture"/>
+          <img id="profile-picture" src="debupic.jpeg" alt="Profile Picture"/>
         </div>
         <p>I completed my BS-MS in Mathematics from Indian Institute of Science Education and Research, Kolkata (IISER-K) in 2023. I qualified for the CSIR-NET (JRF) 2023 with mathematics as my subject.</p>
         <p>From August 2024 to May 2025, I worked as a Teaching Fellow at Ashoka University, where I helped teach courses on calculus, probability, and statistical inference.</p>
-        <p>In August 2025, I'll be joining the Indian Institute of Science (IISc) for a PhD in Computational Neuroscience.</p>
+        <p>In August 2025, I’ll be joining the Indian Institute of Science (IISc) for a PhD in Computational Neuroscience.</p>
       </section>
 
       <section id="links">
         <h2>Links</h2>
         <ul>
-          <li><a href="#" target="_blank">Download CV</a></li>
-          <li><a href="#" target="_blank">Notes</a></li>
-          <li><a href="#" target="_blank">Mathematical Notes</a></li>
+          <li><a href="CV.pdf" target="_blank">Download CV</a></li>
+          <li><a href="Mathematical_Diary.pdf" target="_blank">Notes</a></li>
+          <li><a href="notes.html" target="_blank">Mathematical Notes</a></li>
           <li class="csir-dropdown">
             <details>
               <summary style="color: #90caf9; font-weight: bold; cursor: pointer;">CSIR-NET Documents</summary>
               <ul>
-                <li><a href="#" target="_blank">JRF Award Letter</a></li>
-                <li><a href="#" target="_blank">CSIR-NET Certificate</a></li>
-                <li><a href="#" target="_blank">NET Scorecard</a></li>
+                <li><a href="csir/JOINT%20CSIR-UGC%20NET%20DECEMBER-2023%20_%20India.pdf" target="_blank">JRF Award Letter</a></li>
+                <li><a href="csir/certificate_ugc_csir_net.pdf" target="_blank">CSIR-NET Certificate</a></li>
+                <li><a href="csir/Net_scorecard.pdf" target="_blank">NET Scorecard</a></li>
               </ul>
             </details>
           </li>
@@ -340,10 +49,11 @@
       <h2>Projects</h2>
       <div class="project-card">
         <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-          <img src="https://via.placeholder.com/250x140/37474f/ffffff?text=Game+Thumbnail" alt="Paddle Game Thumbnail" class="project-thumb">
-          <div class="project-video" style="background: #333; display: flex; align-items: center; justify-content: center; color: #999;">
-            Video Player
-          </div>
+          <img src="media/thumnail_potent.jpg" alt="Paddle Game Thumbnail" class="project-thumb">
+          <video controls class="project-video">
+            <source src="media/potent.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div class="project-content">
           <h3>Paddle Game Controlled by Real Hardware</h3>
@@ -358,13 +68,14 @@
       </div>
     </section>
 
-    <section id="daily-puzzle">
-      <h2>Daily Chess Puzzle</h2>
-      <div id="puzzle-wrapper">
-        <div id="puzzle-container"></div>
-        <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
-      </div>
-    </section>
+ <section id="daily-puzzle">
+  <h2>Daily Chess Puzzle</h2>
+  <div id="puzzle-wrapper">
+    <div id="puzzle-container"></div>
+    <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
+  </div>
+</section>
+
 
     <section id="contact">
       <h2>Contact</h2>
@@ -381,43 +92,11 @@
 
   <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
   <script>
-    // Initialize chess puzzle with enhanced containment
-    function initializePuzzle() {
-      try {
-        new Puzzle({ 
-          pieceSize: 55,
-          containment: true // Try to contain within puzzle-container
-        });
-        
-        // Additional DOM manipulation to ensure proper placement
-        setTimeout(() => {
-          const puzzleContainer = document.getElementById('puzzle-container');
-          const puzzleWrapper = document.getElementById('puzzle-wrapper');
-          
-          // Find any ChessTempo elements that might have been misplaced
-          const ctElements = document.querySelectorAll('.ct-puzzle-difficulty, .ct-difficulty-buttons, .ct-button, input[type="button"]');
-          
-          ctElements.forEach(element => {
-            // Check if the element is outside the puzzle wrapper
-            if (!puzzleWrapper.contains(element) && element.className && element.className.includes('ct-')) {
-              // Move it to the puzzle wrapper
-              puzzleWrapper.appendChild(element);
-            }
-          });
-        }, 1000);
-        
-      } catch (error) {
-        console.warn('Chess puzzle initialization failed:', error);
-        // Fallback: show a message
-        const puzzleContainer = document.getElementById('puzzle-container');
-        puzzleContainer.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #999;">Chess puzzle loading...</div>';
-      }
-    }
+    new Puzzle({ pieceSize: 55 });
 
-    // Math trivia rotation
     const triviaList = [
       "The number zero was invented independently by the Babylonians, Mayans, and Indians.",
-      "Hilbert's 23 problems still shape modern mathematics.",
+      "Hilbert’s 23 problems still shape modern mathematics.",
       "The Fibonacci sequence shows up in pineapples and pinecones.",
       "Euler introduced much of modern mathematical notation.",
       "The golden ratio (φ ≈ 1.618) appears in art and nature.",
@@ -438,13 +117,7 @@
       setInterval(updateTrivia, 5000);
     }
 
-    // Initialize everything when DOM is ready
-    document.addEventListener('DOMContentLoaded', function() {
-      rotateTrivia();
-      
-      // Delay puzzle initialization to ensure DOM is fully ready
-      setTimeout(initializePuzzle, 100);
-    });
+    document.addEventListener('DOMContentLoaded', rotateTrivia);
   </script>
 </body>
 </html>
