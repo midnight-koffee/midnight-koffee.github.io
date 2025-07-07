@@ -144,3 +144,66 @@ h2 {
     font-size: 1.4rem; /* Smaller font size for trivia and quotes on small screens */
   }
 }
+
+#projects {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-thumb {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-content h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.project-content p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.github-link:hover {
+  background-color: #1976d2;
+}
+
