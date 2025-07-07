@@ -38,6 +38,7 @@ header h1 {
   gap: 20px;
 }
 
+/* Section styling */
 section {
   background-color: #1e1e1e;
   padding: 20px;
@@ -132,7 +133,7 @@ h2 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Trivia and quote boxes */
+/* Trivia and quote */
 #trivia-border, #quote-border {
   border: 2px solid #90caf9;
   padding: 15px;
@@ -141,16 +142,13 @@ h2 {
   background-color: #222;
 }
 
-/* Chess puzzle */
+/* Chess Puzzle */
 #daily-puzzle {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 #daily-puzzle h2 {
@@ -177,8 +175,7 @@ h2 {
 }
 
 #ct-link {
-  display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
   padding: 6px 12px;
   background-color: #37474f;
   color: #e3f2fd;
@@ -216,12 +213,18 @@ h2 {
     max-width: 100%;
   }
 
-  #daily-puzzle {
+  #puzzle {
     align-items: center;
   }
 
-  #puzzle {
+  #puzzle-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #daily-puzzle {
     align-items: center;
+    text-align: center;
   }
 }
 
