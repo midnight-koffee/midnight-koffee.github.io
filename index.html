@@ -6,49 +6,12 @@
   <title>Divyanshu Kumar</title>
   <link rel="stylesheet" href="style.css"/>
   <link id="puzzleCss" type="text/css" rel="stylesheet" href="https://chesstempo.com/css/dailypuzzle.css"/>
-
-  <style>
-    /* Style the CSIR-NET dropdown to match other links */
-    .csir-dropdown summary {
-      list-style: none;
-    }
-
-    .csir-dropdown summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .csir-dropdown summary {
-      cursor: pointer;
-    }
-
-    .csir-dropdown summary span {
-      color: #90caf9;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .csir-dropdown ul {
-      margin-top: 0.5em;
-      padding-left: 1.5em;
-    }
-
-    .csir-dropdown ul li a {
-      color: #90caf9;
-      text-decoration: none;
-      font-style: italic;
-    }
-
-    .csir-dropdown ul li a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body>
   <header>
     <h1>Divyanshu Kumar</h1>
   </header>
-
 
   <main class="container">
     <div class="grid-container">
@@ -68,63 +31,55 @@
           <li><a href="CV.pdf" target="_blank">Download CV</a></li>
           <li><a href="Mathematical_Diary.pdf" target="_blank">Notes</a></li>
           <li><a href="notes.html" target="_blank">Mathematical Notes</a></li>
-
-          
           <li class="csir-dropdown">
             <details>
-
               <summary style="color: #90caf9; font-weight: bold; cursor: pointer;">CSIR-NET Documents</summary>
-
               <ul>
                 <li><a href="csir/JOINT%20CSIR-UGC%20NET%20DECEMBER-2023%20_%20India.pdf" target="_blank">JRF Award Letter</a></li>
                 <li><a href="csir/certificate_ugc_csir_net.pdf" target="_blank">CSIR-NET Certificate</a></li>
                 <li><a href="csir/Net_scorecard.pdf" target="_blank">NET Scorecard</a></li>
               </ul>
-
             </details>
-</li>
-
+          </li>
         </ul>
       </section>
     </div>
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <img src="media/thumnail_potent.jpg" alt="Paddle Game Thumbnail" class="project-thumb">
-    <video controls class="project-video">
-      <source src="media/potent.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div class="project-content">
-    <h3>Paddle Game Controlled by Real Hardware</h3>
-    <p>Built using Arduino and Processing, this game uses a physical potentiometer to control the paddle — bringing real-world input to digital play.</p>
-  </div>
-</div>
 
-</section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+          <img src="media/thumnail_potent.jpg" alt="Paddle Game Thumbnail" class="project-thumb">
+          <video controls class="project-video">
+            <source src="media/potent.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-content">
+          <h3>Paddle Game Controlled by Real Hardware</h3>
+          <p>Built using Arduino and Processing, this game uses a physical potentiometer to control the paddle — bringing real-world input to digital play.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="math-trivia">
       <div id="trivia-border">
         <p id="trivia-text"></p>
       </div>
     </section>
 
-
-<section id="daily-puzzle">
-  <h2>Daily Chess Puzzle</h2>
-  <div id="puzzle">
-    <div id="puzzle-container"></div>
-    <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
-  </div>
-</section>
-
-
+    <section id="daily-puzzle">
+      <h2>Daily Chess Puzzle</h2>
+      <div id="puzzle">
+        <div id="puzzle-container"></div>
+        <a id="ct-link" href="https://chesstempo.com/play-chess-online/" target="_blank">Play Chess Online</a>
+      </div>
+    </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Phone: <a href="tel:+917667299676" style="color: #90caf9;" target="_blank">+91-7667299676</a></p>
-      <p>Email: <a href="mailto:debu.chatra@gmail.com" style="color: #90caf9;" target="_blank">debu.chatra@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917667299676" target="_blank">+91-7667299676</a></p>
+      <p>Email: <a href="mailto:debu.chatra@gmail.com" target="_blank">debu.chatra@gmail.com</a></p>
     </section>
 
     <section id="quote">
@@ -137,16 +92,15 @@
   <script type="text/javascript" src="https://chesstempo.com/js/dailypuzzle.js"></script>
   <script>
     new Puzzle({ pieceSize: 55 });
-  </script>
-  <script>
+
     const triviaList = [
-      "The number zero was invented independently by the Babylonians, Mayans, and Indians. In mathematics, it is called the additive identity.",
-      "In 1900, David Hilbert presented a list of 23 unsolved problems at the International Congress of Mathematicians in Paris, many of which remain unsolved to this day.",
-      "The Fibonacci sequence appears in many places in nature, including the branching of trees, the arrangement of leaves on a stem, and the fruitlets of a pineapple.",
-      "Leonhard Euler, one of the greatest mathematicians of all time, introduced much of modern mathematical terminology and notation, such as the concept of a function.",
-      "The golden ratio, approximately 1.618, is often encountered in geometry, art, architecture, and nature. It is denoted by the Greek letter φ (phi).",
-      "Srinivasa Ramanujan, an Indian mathematician, made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions.",
-      "Alan Turing, widely considered the father of theoretical computer science and artificial intelligence, developed the concept of a Turing machine, a mathematical model of computation."
+      "The number zero was invented independently by the Babylonians, Mayans, and Indians.",
+      "Hilbert’s 23 problems still shape modern mathematics.",
+      "The Fibonacci sequence shows up in pineapples and pinecones.",
+      "Euler introduced much of modern mathematical notation.",
+      "The golden ratio (φ ≈ 1.618) appears in art and nature.",
+      "Ramanujan made deep contributions to number theory and series.",
+      "Alan Turing laid the groundwork for AI and computing."
     ];
 
     function rotateTrivia() {
@@ -164,7 +118,5 @@
 
     document.addEventListener('DOMContentLoaded', rotateTrivia);
   </script>
-
-  <script src="script.js"></script>
 </body>
 </html>

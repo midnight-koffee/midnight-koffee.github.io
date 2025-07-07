@@ -26,7 +26,6 @@ header h1 {
   font-size: 1.8rem;
 }
 
-/* Main container */
 .container {
   max-width: 800px;
   margin: auto;
@@ -39,7 +38,6 @@ header h1 {
   gap: 20px;
 }
 
-/* Section styling */
 section {
   background-color: #1e1e1e;
   padding: 20px;
@@ -56,7 +54,7 @@ h2 {
   border-bottom: 2px solid #0d47a1;
 }
 
-/* About/Profile styling */
+/* Profile picture */
 #profile-picture {
   width: 200px;
   height: 200px;
@@ -65,7 +63,7 @@ h2 {
   border: 3px solid #0d47a1;
 }
 
-/* Links section styling */
+/* Links */
 #links ul {
   list-style: none;
 }
@@ -80,7 +78,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Projects section */
+/* Projects */
 #projects {
   background-color: #1a1a1a;
 }
@@ -134,7 +132,7 @@ h2 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-/* Trivia and Quote */
+/* Trivia and quote boxes */
 #trivia-border, #quote-border {
   border: 2px solid #90caf9;
   padding: 15px;
@@ -143,15 +141,16 @@ h2 {
   background-color: #222;
 }
 
-/* Chess Puzzle */
+/* Chess puzzle */
 #daily-puzzle {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  text-align: left;
-  clear: both;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #daily-puzzle h2 {
@@ -160,6 +159,7 @@ h2 {
   color: #90caf9;
   border-bottom: 2px solid #0d47a1;
   padding-bottom: 5px;
+  text-align: left;
 }
 
 #puzzle {
@@ -167,7 +167,6 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 10px;
 }
 
 #puzzle-container {
@@ -179,7 +178,7 @@ h2 {
 
 #ct-link {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 6px 12px;
   background-color: #37474f;
   color: #e3f2fd;
@@ -194,7 +193,7 @@ h2 {
   background-color: #455a64;
 }
 
-/* Contact section */
+/* Contact */
 #contact a {
   color: #90caf9;
   text-decoration: none;
@@ -204,7 +203,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
+/* Responsive tweaks */
 @media only screen and (max-width: 700px) {
   .project-card {
     flex-direction: column;
@@ -217,13 +216,12 @@ h2 {
     max-width: 100%;
   }
 
-  #puzzle {
+  #daily-puzzle {
     align-items: center;
   }
 
-  #puzzle-container {
-    margin-left: auto;
-    margin-right: auto;
+  #puzzle {
+    align-items: center;
   }
 }
 
